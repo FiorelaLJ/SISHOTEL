@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">MOSSOQ</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+            <div class="form-group">
+                    <label for="exampleFormControlSelect1">Idioma</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Español</option>
+                      <option>Ingles</option>
+                      <option>...</option>
+                    </select>   
+            </div>
+            <a class="btn btn-success" href="../pagina-login/pagina-login.component.html">iniciar sesion</a>
+    </form>
+  </div>
+</nav>
+
+<div class="container-fluid bg-dark">
+  <div class="row bg-dark">
+      <div class="col-2 collapse d-md-flex" id="sidebar">
+          <ul class="nav flex-column flex-nowrap">
+              <li class="nav-item">
+                
+                  <img src="E:/logoHotel.jpg" alt="imagen" height="600" width="600" class="img-thumbnail">
+              </li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Reservas</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Ofertas</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Rooms</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
+              <li class="nav-item">
+                  <a class="nav-link collapsed text-white" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Reportes</a>
+                  <div class="collapse" id="submenu1" aria-expanded="false">
+                      <ul class="flex-column pl-2 nav">
+                          <li class="nav-item"><a class="nav-link py-0 text-white" href="#">Otros</a></li>
+                          <li class="nav-item">
+                              <a class="nav-link collapsed py-1 text-white" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Otros 2</a>
+                              <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                  <ul class="flex-column nav pl-4">
+                                      <li class="nav-item">
+                                          <a class="nav-link p-1 text-white" href="#">
+                                              <i class="fa fa-fw fa-clock-o"></i>  otros 2.1
+                                          </a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link p-1 text-white" href="#">
+                                              <i class="fa fa-fw fa-dashboard"></i> otros 2.2
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+      <div class="col pt-2 bg-white"id="ntb">
+          <h2>
+            <a href="" data-target="#sidebar" data-toggle="collapse" class="d-md-none"><i class="fa fa-bars"></i></a>
+          </h2>
+          <app-contenido-inicio></app-contenido-inicio>
+      </div>
+  </div>
+</div>
